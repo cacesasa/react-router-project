@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #FFF7ED;
+    display: flex;
+    width: 34.25rem;
+    height: 7rem;
+    justify-content: space-between;
+    padding: 2.25rem 1.625rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4375rem;
+}
+
+.logo {
+    font-size: 1.5625rem;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+}
