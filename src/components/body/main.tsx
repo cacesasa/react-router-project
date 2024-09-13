@@ -1,10 +1,11 @@
 import styles from "./main.module.css";
 import { Link } from "react-router-dom";
+import vanImg from "../../assets/images/man-on-van.png";
 
 export default function Main() {
   return (
     <main className={styles.main}>
-      <img src="src/assets/images/man-on-van.png" alt="Vans Logo" />
+      <img src={vanImg} alt="Vans Logo" />
       <section className={styles.mainContent}>
         <div className={styles.heading}>
           <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
