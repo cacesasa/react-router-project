@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Main() {
     return (
         <main className={styles.main}>
-            <img src="../src/assets/images/man-on-van.png" alt="Vans Logo" />
+            <img src="src/assets/images/man-on-van.png" alt="Vans Logo" />
             <section className={styles.mainContent}>
                 <div className={styles.heading}>
                     <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
