@@ -5,8 +5,7 @@ import Main from './components/body/main'
 import Footer from './components/footer/footer'
 import MainVans from './components/body/mainVans'
 
-function App() {
-  
+function App() {  
 
   return (
     <>
