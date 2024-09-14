@@ -1,5 +1,113 @@
 .vanPage {
     background-color: #FFF7ED;
-    display: grid;
+    display: grid;    
     width: 34.25rem;
+    padding: 2.5rem 1.6875rem 5.31255rem 1.6875rem;
+}
+
+.link {
+    color: #201F1D;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    text-decoration: none;
+    
+}
+
+.vanImg {
+    width: 100%;
+    border-radius: 0.3125rem;
+    margin-top: 2.5625rem;
+}
+
+.vanInfo {
+    margin: 3.125rem 0 1.375rem 0;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.simple {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: type;
+    color: #FFFFFF;
+    background-color: #E17654;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 0;
+    text-transform: capitalize;
+    border: none;
+    width: 5.375rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.rugged {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: type;
+    color: #FFFFFF;
+    background-color: #115e59;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 0;
+    text-transform: capitalize;
+    border: none;
+    width: 5.375rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+.luxury {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: type;
+    color: #FFFFFF;
+    background-color: #161616;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 0;
+    text-transform: capitalize;
+    border: none;
+    width: 5.375rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.button {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #FF8C38;
+    font-size: 1.125rem;
+    border-radius: 0.3125rem;
+    padding: 0.5rem 0;
+    border: none;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.5rem;
+}
+
+.vanPrice {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0.75rem 0;    
+}
+
+span {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
 }
