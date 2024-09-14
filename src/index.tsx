@@ -1,68 +1,29 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import NavBar from './components/nav/nav-bar'
 import Main from './components/body/main'
-import Footer from './components/footer/footer'
 import MainVans from './components/body/mainVans'
 import Vans from './components/body/vans'
 import VanPage from './components/body/vanPage'
 import { vans as data } from "./server.js";
-
+import Layout from './components/layout/Layout'
 function App() {  
 
   return (
-    <>
+    <div className="App">
       
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          <Route path="/vans" element={<VansCollection/>}/>
-          <Route path="/vans/:id" element={<OneVan/>}/>
+          <Route element={<Layout />}>
+            <Route path="/" element={<Main/>}/>
+            <Route path="/about" element={<MainVans/>}/>
+            <Route path="/vans" element={<Vans data={data}/>}/>
+            <Route path="/vans/:id" element={<VanPage data={data}/>}/>
+          </Route>
         </Routes>
       </BrowserRouter>
-    </>
-  )
-}
-
-function Home() {
-  return (
-    <div className='Home'>
-      <NavBar/>
-      <Main/>
-      <Footer/>
     </div>
   )
 }
 
-function About() {
-  return (
-    <div className='Home'>
-      <NavBar/>
-      <MainVans/>
-      <Footer/>
-    </div>
-  )
-}
-
-function VansCollection() {
-  return (
-    <div className='Home'>
-      <NavBar/>
-      <Vans data={data}/>
-      <Footer/>
-    </div>
-  )
-}
-
-function OneVan() {
-  return (
-    <div className='Home'>
-      <NavBar/>
-      <VanPage data={data}/>
-      <Footer/>
-    </div>
-  )
-}
 
 export default App

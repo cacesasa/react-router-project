@@ -1,7 +1,8 @@
-.Home {
+.App {
   display: grid;
   /* min-height: 100vh; */
   min-width: 100vw;
+  display: grid;
   justify-content: center;
   padding: 4rem;
 }
