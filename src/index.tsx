@@ -5,6 +5,8 @@ import Main from './components/body/main'
 import Footer from './components/footer/footer'
 import MainVans from './components/body/mainVans'
 import Vans from './components/body/vans'
+import VanPage from './components/body/vanPage'
+import { vans as data } from "./server.js";
 
 function App() {  
 
@@ -47,7 +49,7 @@ function VansCollection() {
   return (
     <div className='Home'>
       <NavBar/>
-      <Vans/>
+      <Vans data={data}/>
       <Footer/>
     </div>
   )
@@ -57,10 +59,10 @@ function OneVan() {
   return (
     <div className='Home'>
       <NavBar/>
+      <VanPage data={data}/>
       <Footer/>
     </div>
   )
 }
-
 
 export default App

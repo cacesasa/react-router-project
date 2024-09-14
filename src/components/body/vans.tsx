@@ -1,7 +1,7 @@
 import styles from './van.module.css'
 import GetVans from './getvans'
 
-export default function Vans() {
+export default function Vans({data}) {
 
     return (
         <section className={styles.vans}>
@@ -13,7 +13,7 @@ export default function Vans() {
                 <p className={styles.clear}>Clear filters</p>
             </div>
             <div className={styles.vanList}>
-                <GetVans />
+                <GetVans data={data}/>
             </div>
         </section>
     )
