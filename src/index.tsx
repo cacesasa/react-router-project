@@ -4,6 +4,7 @@ import NavBar from './components/nav/nav-bar'
 import Main from './components/body/main'
 import Footer from './components/footer/footer'
 import MainVans from './components/body/mainVans'
+import Vans from './components/body/vans'
 
 function App() {  
 
@@ -14,6 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/about" element={<About/>}/>
+          <Route path="/vans" element={<VansCollection/>}/>
+          <Route path="/vans/:id" element={<OneVan/>}/>
         </Routes>
       </BrowserRouter>
     </>
@@ -39,5 +42,25 @@ function About() {
     </div>
   )
 }
+
+function VansCollection() {
+  return (
+    <div className='Home'>
+      <NavBar/>
+      <Vans/>
+      <Footer/>
+    </div>
+  )
+}
+
+function OneVan() {
+  return (
+    <div className='Home'>
+      <NavBar/>
+      <Footer/>
+    </div>
+  )
+}
+
 
 export default App

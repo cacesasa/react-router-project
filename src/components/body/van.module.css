@@ -1,0 +1,129 @@
+.vans {
+    background-color: #FFF7ED;
+    display: grid;
+    width: 34.25rem;
+    padding: 3.375rem 1.6875rem 5.1875rem 1.6875rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+}
+
+.filterButtons {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    gap: 1.25rem;
+    font-size: 1rem;
+    align-items: center;
+    margin: 1.375rem 0 3.5rem 0;
+}
+
+.button {
+    background-color: #FFEAD0;
+    border: none;
+    padding: 0.5rem 1.625rem;
+    border-radius: 0.3125rem;
+    font-weight: 700;   
+    cursor: pointer;
+}
+
+.clear {
+    margin: 0 0 0 auto;
+}
+
+.getVans {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    color: #161616
+}
+
+.vanInfo {
+    margin-top: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "name price" "type type";
+}
+
+.vanImg {
+    width: 100%;
+    border-radius: 0.3125rem;
+}
+
+.vanName {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: name;
+}
+
+.vanPrice {
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: price;
+}
+
+.perDay {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.simple {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: type;
+    color: #FFFFFF;
+    background-color: #E17654;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 0;
+    text-transform: capitalize;
+    border: none;
+    width: 5.375rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.rugged {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: type;
+    color: #FFFFFF;
+    background-color: #115e59;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 0;
+    text-transform: capitalize;
+    border: none;
+    width: 5.375rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+.luxury {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    grid-area: type;
+    color: #FFFFFF;
+    background-color: #161616;
+    border-radius: 0.3125rem;
+    padding: 0.125rem 0;
+    text-transform: capitalize;
+    border: none;
+    width: 5.375rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
